@@ -29,9 +29,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import org.cuatrovientos.wordle.R;
 import org.cuatrovientos.wordle.adapter.RecyclerDataAdapterPuntuacion;
 import org.cuatrovientos.wordle.model.Puntuacion;
-import org.cuatrovientos.wordle.utils.MyUtils;
-
-import java.nio.channels.Channel;
 
 import io.realm.Realm;
 import io.realm.RealmChangeListener;
@@ -172,8 +169,6 @@ public class WinActivity extends AppCompatActivity {
 
         createNotificationChannel();
 
-
-
         if(notId == null){notId = 0;}else{notId += 1;}
 
         //NotificationCompat.Builder notificacion = MyUtils.genNotificationSimple(this,CHANNEL_ID,"Felicidades!","Reta a tus amigos a resolver la palábra del dia",R.mipmap.ic_wordle2_foreground);
@@ -183,38 +178,6 @@ public class WinActivity extends AppCompatActivity {
                 .setContentText("Reta a tus amigos a resolver la palábra del dia")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .setCategory(NotificationCompat.CATEGORY_MESSAGE);
-        notificationManager.notify(notId, notificacion.build());
-
-        notId+=1;
-
-        Intent intent = new Intent(WinActivity.this, MainActivity.class);
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
-
-        notificacion = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setSmallIcon(R.mipmap.ic_wordle2_foreground)
-                .setContentTitle("Felicidades!")
-                .setContentText("Reta a tus amigos a resolver la palábra del dia")
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                .setCategory(NotificationCompat.CATEGORY_MESSAGE)
-                .setContentIntent(pendingIntent)
-                .setAutoCancel(true);
-        notificationManager.notify(notId, notificacion.build());
-
-        notId+=1;
-
-        Intent intent2 = new Intent(WinActivity.this, MainActivity.class);
-        PendingIntent pendingIntent2 = PendingIntent.getActivity(this, 0, intent2, 0);
-
-        notificacion = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setSmallIcon(R.mipmap.ic_wordle2_foreground)
-                .setContentTitle("Felicidades!")
-                .setContentText("Reta a tus amigos a resolver la palábra del dia")
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                .setCategory(NotificationCompat.CATEGORY_MESSAGE)
-                .setContentIntent(pendingIntent)
-                .setAutoCancel(true)
-                .addAction(R.drawable.btnlet_layout_grey, "REPLAY",pendingIntent2);
-
         notificationManager.notify(notId, notificacion.build());
 
 
