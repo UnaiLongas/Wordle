@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Wordle</string>
+
+    <!--Strings para holdear texto pero luego se modifican-->
+    <string name="holderLetra1">A</string>
+    <string name="holderLetra2">B</string>
+    <string name="holderLetra3">C</string>
+    <string name="holderLetra4">D</string>
+    <string name="holderLetra5">E</string>
+    <string name="holderWord"></string>
+    <string name="holder">TEXT</string>
+    <string name="holderRes">La palabra es:</string>
+
+    <string name="letHint">Introduce a letter</string>
+
+    <string name="resWin">Has ganado</string>
+    <string name="resLoose">Has perdido</string>
+
+    <string name="playerNameQuestion">Introduce tu nombre:</string>
+
+    <string name="btnConfirm">Confirmar</string>
+    <string name="btnSave">Guardar</string>
+    <string name="btnUnsave">No Guardar</string>
+    <string name="btnCancel">Cancelar</string>
+
+
+    <string name="contDescriptionRv">RecyclerView de las puntuaciones</string>
+    <string name="contDescriptionImgV">ImageView del resutlado</string>
+    <string name="contDescriptionFabIcon">FabIcon para volver a la activivdad principal</string>
+
+    <string name="dialogBanner">Atención</string>
+    <string name="dialogQuestion">Cambiar de modo reiniciara el juego, desea continuar?</string>
+    <string name="dialogYes">Confirmar</string>
+    <string name="dialogNo">Cancelar</string>
+
+    <string name="notButton">Compartir</string>
+
+</resources>

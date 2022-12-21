@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WinActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabDN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/altMargin8"
+        android:layout_marginEnd="@dimen/altMargin8"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_moon_black_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/altMarginQuarter"
+        android:layout_marginBottom="@dimen/altMarginQuarter"
+        android:clickable="true"
+        android:contentDescription="@string/contDescriptionFabIcon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/altMarginDef"
+        android:text="@string/resWin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPalResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/altMarginMid"
+        app:layout_constraintEnd_toEndOf="@+id/txtResult"
+        app:layout_constraintHorizontal_bias="0.47"
+        android:text="@string/holderRes"
+        app:layout_constraintStart_toStartOf="@+id/txtResult"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult" />
+
+    <ImageView
+        android:id="@+id/imgResult"
+        android:layout_width="@dimen/hwImageResult"
+        android:layout_height="@dimen/hwImageResult"
+        android:layout_marginTop="@dimen/altMarginMid"
+        app:layout_constraintEnd_toEndOf="@+id/txtResult"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/txtResult"
+        android:contentDescription="@string/contDescriptionImgV"
+        app:layout_constraintTop_toBottomOf="@+id/txtPalResult" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPuntuaciones"
+        android:layout_width="335dp"
+        android:layout_height="257dp"
+        android:layout_marginTop="@dimen/altMarginDef"
+        app:layout_constraintEnd_toEndOf="@+id/imgResult"
+        app:layout_constraintStart_toStartOf="@+id/imgResult"
+        android:contentDescription="@string/contDescriptionRv"
+        app:layout_constraintTop_toBottomOf="@+id/imgResult" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+</androidx.constraintlayout.widget.ConstraintLayout>

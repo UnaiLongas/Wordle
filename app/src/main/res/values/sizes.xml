@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lytTecHeigth">70dp</dimen>
+    <!--<dimen name="lytTecWidth">match_parent</dimen>-->
+
+    <dimen name="lytMarginL">1dp</dimen>
+    <dimen name="lytMarginR">1dp</dimen>
+    <dimen name="lytMarginT">1dp</dimen>
+    <dimen name="lytMarginB">1dp</dimen>
+
+    <dimen name="btnGrdHeigth">65dp</dimen>
+    <dimen name="btnGrdWidth">32dp</dimen>
+    <dimen name="btnLetHeigth">65dp</dimen>
+    <dimen name="btnLetWidth">12dp</dimen>
+
+    <dimen name="btnLetMarginL">1dp</dimen>
+    <dimen name="btnLetMarginR">1dp</dimen>
+    <dimen name="btnLetMarginT">1dp</dimen>
+    <dimen name="btnLetMarginB">1dp</dimen>
+
+    <dimen name="btnLetPaddingL">4dp</dimen>
+    <dimen name="btnLetPaddingR">4dp</dimen>
+    <dimen name="btnLetPaddingT">4dp</dimen>
+    <dimen name="btnLetPaddingB">4dp</dimen>
+    
+    <dimen name="letMargins">3dp</dimen>
+    <dimen name="letWidth">75dp</dimen>
+    <dimen name="letHeigth">75dp</dimen>
+
+    <!--<dimen name="linPadding">8dp</dimen>-->
+    <dimen name="linPadding">0dp</dimen>
+    
+    <dimen name="altMarginDef">64dp</dimen>
+    <dimen name="altMarginMid">32dp</dimen>
+    <dimen name="altMarginQuarter">16dp</dimen>
+    <dimen name="altMargin8">8dp</dimen>
+    <dimen name="hwImageResult">128dp</dimen>
+
+    <dimen name="lytPlayerPadding">4dp</dimen>
+    <dimen name="btnPlayerLytMargin">16dp</dimen>
+
+</resources>

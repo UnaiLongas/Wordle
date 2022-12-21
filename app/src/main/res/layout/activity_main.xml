@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvIntentos"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="@dimen/linPadding"
+        app:layout_constraintBottom_toTopOf="@+id/lyt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <LinearLayout
+        android:id="@+id/lyt1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lytTecHeigth"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/lytMarginL"
+        android:paddingTop="@dimen/lytMarginT"
+        android:paddingEnd="@dimen/lytMarginR"
+        android:paddingBottom="@dimen/lytMarginB"
+        app:layout_constraintBottom_toTopOf="@+id/lyt2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnQ"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginTop="@dimen/btnLetMarginT"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_marginBottom="@dimen/btnLetMarginB"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:height="@dimen/btnLetHeigth"
+            android:minWidth="0dip"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="q" />
+
+        <Button
+            android:id="@+id/btnW"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="w" />
+
+        <Button
+            android:id="@+id/btnE"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="e" />
+
+        <Button
+            android:id="@+id/btnR"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="r" />
+
+        <Button
+            android:id="@+id/btnT"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="t" />
+
+        <Button
+            android:id="@+id/btnY"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="y" />
+
+        <Button
+            android:id="@+id/btnU"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="u" />
+
+        <Button
+            android:id="@+id/btnI"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="i" />
+
+        <Button
+            android:id="@+id/btnO"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="o" />
+
+        <Button
+            android:id="@+id/btnP"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="p" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lytTecHeigth"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/lytMarginL"
+        android:paddingTop="@dimen/lytMarginT"
+        android:paddingEnd="@dimen/lytMarginR"
+        android:paddingBottom="@dimen/lytMarginB"
+        app:layout_constraintBottom_toTopOf="@+id/lyt3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:height="@dimen/btnLetHeigth"
+            android:minWidth="0dip"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="a" />
+
+        <Button
+            android:id="@+id/btnS"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="s" />
+
+        <Button
+            android:id="@+id/btnD"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="d" />
+
+        <Button
+            android:id="@+id/btnF"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="f" />
+
+        <Button
+            android:id="@+id/btnG"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="g" />
+
+        <Button
+            android:id="@+id/btnH"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="h" />
+
+        <Button
+            android:id="@+id/btnJ"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="j" />
+
+        <Button
+            android:id="@+id/btnK"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="k" />
+
+        <Button
+            android:id="@+id/btnL"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="l" />
+
+        <Button
+            android:id="@+id/btnNN"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="ñ" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lytTecHeigth"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/lytMarginL"
+        android:paddingTop="@dimen/lytMarginT"
+        android:paddingEnd="@dimen/lytMarginR"
+        android:paddingBottom="@dimen/lytMarginB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnDel"
+            android:layout_width="@dimen/btnGrdWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnGrdWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="del" />
+
+        <Button
+            android:id="@+id/btnZ"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="z" />
+
+        <Button
+            android:id="@+id/btnX"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="x" />
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="c" />
+
+        <Button
+            android:id="@+id/btnV"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="v" />
+
+        <Button
+            android:id="@+id/btnB"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="b" />
+
+        <Button
+            android:id="@+id/btnN"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="n" />
+
+        <Button
+            android:id="@+id/btnM"
+            android:layout_width="@dimen/btnLetWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnLetWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="m" />
+
+        <Button
+            android:id="@+id/btnChk"
+            android:layout_width="@dimen/btnGrdWidth"
+            android:layout_height="@dimen/btnLetHeigth"
+            android:layout_marginStart="@dimen/btnLetMarginL"
+            android:layout_marginEnd="@dimen/btnLetMarginR"
+            android:layout_weight="1"
+            android:width="@dimen/btnGrdWidth"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/btnLetPaddingL"
+            android:paddingTop="@dimen/btnLetPaddingT"
+            android:paddingRight="@dimen/btnLetPaddingR"
+            android:paddingBottom="@dimen/btnLetPaddingB"
+            android:text="chk" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabDN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/altMargin8"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/rvIntentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        app:srcCompat="@drawable/ic_moon_black_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
